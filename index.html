@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <h1 id="title">Welcome to my form</h1>
+    <p id="description">I'm learning to code</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Enter your name: <input id="name" required type="text" placeholder="Name"></label>
+      <label id="email-label" for="email">Enter your e-mail: <input id="email" required type="email" placeholder="Email"></label>
+      <label id="number-label" for="number">Enter your age: <input id="number" type="number" min="15" max="29" placeholder="Age"></label>
+      <p>Agree with this statement?</p>
+      <select id="dropdown">
+        <option value="0">Prefer not to answer</option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+        <option value="3">Somewhat</option>
+      </select>
+      <p>Are you sure?</p>
+      <label for="radio1">Yes<input checked id="radio1" type="radio" name="bgm" value="Yes">
+      <label for="radio2">No<input id="radio2" type="radio" name="bgm" value="No">
+      <p>Check these boxes randomly, I guess. They serve no real purpose anyway.</p>
+      <input id="checkbox1" type="checkbox" value="1"><label for="checkbox1">Or</label>
+      <input id="checkbox2" type="checkbox" value="2"><label for="checkbox2">Maybe</label>
+      <input id="checkbox3" type="checkbox" value="3"><label for="checkbox3">They</label>
+      <input id="checkbox4" type="checkbox" value="4"><label for="checkbox4">Do<label>
+      <input id="checkbox5" type="checkbox" value="5"><label for="checkbox5">Who<label>
+      <input id="checkbox6" type="checkbox" value="6"><label for="checkbox6">Knows</label>
+      <p>Enter some text here. It's not like anyone will read it.</p>
+      <textarea id="textarea" placeholder="I am always watching" name="textarea" rows="4" cols="30"></textarea>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
